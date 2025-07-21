@@ -1,1 +1,18 @@
+# The LineageOS device tree
 
+# Processor
+TARGET_ARCH := arm64
+TARGET_ARCH_VARIANT := armv8-2a
+TARGET_CPU_ABI := arm64-v8a
+
+# MediaTek
+BOARD_USES_MTK_HARDWARE := true
+TARGET_BOARD_PLATFORM := mt6765
+
+# Graphics
+TARGET_USES_HWC2 := true
+BOARD_USES_MTK_MEDIA_PROFILES := true
+
+# Loader
+BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
+BOARD_KERNEL_PAGESIZE := 2048
